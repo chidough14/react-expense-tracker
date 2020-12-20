@@ -1,6 +1,7 @@
 import React from 'react'
 import {Card, CardHeader, CardContent, Typography, Grid, Divider} from  '@material-ui/core'
 import makeStyles from './styles'
+import Form from './Form/Form'
 
 const Main = () => {
     const classes = makeStyles()
@@ -15,7 +16,7 @@ const Main = () => {
                 </Typography>
 
                 <Divider />
-                {/* Form */}
+                <Form />
             </CardContent>
 
             <CardContent className={classes.cartContent}>
