@@ -1,0 +1,43 @@
+category_income = [
+    Business
+    Investments
+    Extra income
+    Deposits
+    Lottery
+    Gifts
+    Salary
+    Savings
+    Rental inocome
+]
+
+category_expense = [
+    Bills
+    Car
+    Clothes
+    Travel
+    Food
+    Shopping
+    House
+    Entertainment
+    Phone
+    Pets
+    Other
+]
+
+*create_transaction [Create|Finish|save] {transaction}
+*cancel_transaction [Cancel|Delete|Remove] {transaction}
+
+*add_category [set|change] category {to} [$category_expense|$category_income](category)
+*add_category {i mean} category {is} [$category_expense|$category_income](category)
+
+*add_date [set|change] date {to} $SPEECHLY.DATE(date)
+*add_date {i mean} category {is} [$category_expense|$category_income](category)
+
+*add_amount [set|change] amount {to} $SPEECHLY.NUMBER(amount)
+*add_amount {i mean} amount {is} $SPEECHLY.NUMBER(amount)
+
+*add_expense {Add} expense {[for|of]} $SPEECHLY.NUMBER(amount) {dollars} {in} {category} $category_expense(category) {[for|in]} $SPEECHLY.DATE(date)
+*add_expense $SPEECHLY.NUMBER(amount) {dollars} expense {in} {category} $category_expense(category) {[for|in]} $SPEECHLY.DATE(date)
+
+*add_income {Add} {income} {[for|of]} $SPEECHLY.NUMBER(amount) {dollars} {in} {category} $category_income(category) {[for|in]} $SPEECHLY.DATE(date)
+*add_income $SPEECHLY.NUMBER(amount) {dollars} income {in} {category} $category_income(category) {[for|in]} $SPEECHLY.DATE(date)
