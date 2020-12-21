@@ -7,7 +7,7 @@ import './index.css'
 import {Provider} from './context/context'
 
 ReactDOM.render(
-    <SpeechProvider appId="0aba750c-4037-4fef-b244-1ebed43ea9b6" language="en-US">
+    <SpeechProvider appId="d350910e-fd46-4d0b-b9ef-6486d5724e75" language="en-US">
         <Provider>
             <App />
         </Provider>
